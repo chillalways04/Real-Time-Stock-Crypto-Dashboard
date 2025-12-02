@@ -19,7 +19,7 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 - เลือก Symbol หลายตัวพร้อมกัน เช่น `AAPL`, `NVDA`, `META`, `BTC-USD`
 - ปรับช่วงเวลาได้: **1M, 3M, 6M, 1Y, Custom**
 
-### 📊 Visualization แบบจัดเต็ม
+### 📊 Visualization 
 - 📉 **Price Line Chart** (Zoom / Hover / Multi-Symbol)
 - 📊 **Volume Bar Chart**
 - 🔢 **KPI Metrics** (Last Close & % Change)
@@ -56,6 +56,7 @@ StockPy/
 └── screenshots/
     ├── dashboard_overview.png
     ├── dashboard_volume_summary.png
+
 
 
 
