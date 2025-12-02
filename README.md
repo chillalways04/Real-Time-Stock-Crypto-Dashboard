@@ -44,6 +44,98 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 ---
 
+
+
+# ⚙️ Installation & Setup & How it Works
+* Clone repository
+ git clone https://github.com/your-username/StockPY.git cd StockPY
+
+--- 
+
+
+## (แนะนำ) สร้าง virtual environment
+    python -m venv venv
+
+## Windows:
+    venv\Scripts\activate
+
+## Run application
+    streamlit run stock.py
+* เปิดเบราว์เซอร์:
+#### http://localhost:8501
+
+
+## 🧠 How It Works
+  #### 1. ดึงข้อมูลตลาดผ่าน yfinance (OHLCV)
+* Close Price
+* Volume
+* Auto Adjust (ปรับตาม dividend/split)
+ข้อมูลถูก cache ไว้ 5 นาทีเพื่อความเร็ว 
+
+#### 2. แปลงข้อมูลสำหรับ Plotly
+
+* ข้อมูลถูกแปลงจาก wide → long format:
+
+        | Date | Symbol | Close | Volume |
+
+        เหมาะสำหรับ line chart และ bar chart
+
+####  3. แสดง KPI (Period Change)
+
+คำนวณ:
+
+    %Change = (Last Close - First Close) / First Close * 100
+แล้วแสดงผ่าน st.metric
+
+#### 4. สร้างกราฟแบบ Interactive
+
+📉 Price Chart
+        
+* ulti-symbol
+
+ * Hover shows price & volume
+
+* รองรับ Log scale
+
+📊 Volume Chart
+
+* Grouped bars per date
+
+* เปรียบเทียบระหว่าง Symbol ได้ดีมาก
+
+## 📋 Summary Table
+แสดงข้อมูลสุดท้ายของช่วงเวลาที่เลือก:
+
+* Last Close
+
+* Change %
+
+* Last Volume
+
+* Last Date
+
+## 📡 API & Data Source
+
+ใช้ข้อมูลจาก Yahoo Finance ผ่านไลบรารี:
+
+    yfinance
+
+ดึงข้อมูล OHLCV ทุกครั้งที่ผู้ใช้เปลี่ยน Symbol หรือช่วงเวลา
+
+
+## 📝 Requirements
+    streamlit
+    yfinance
+    pandas
+    numpy
+    plotly
+
+## 📜 License
+
+##### This project is released under the MIT License.
+You are free to use, modify, and distribute this project.
+
+
 ## 📂 Project Structure
 
 ```txt
@@ -55,6 +147,7 @@ StockPy/
 └── screenshots/
     ├── dashboard_overview.png
     ├── dashboard_volume_summary.png
+
 
 
 
