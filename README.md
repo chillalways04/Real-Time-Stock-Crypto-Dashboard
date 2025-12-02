@@ -9,8 +9,8 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 > *(เพิ่มรูปในโฟลเดอร์ `screenshots/` แล้วแก้ชื่อไฟล์ตามต้องการ)*
 
-![Dashboard Overview](screenshots/Dashboard_overview.png)
-![Volume & Summary](screenshots/Dashboard_volume_summary.png)
+![Dashboard Overview](screenshots/dashboard_overview.png)
+![Volume & Summary](screenshots/dashboard_volume_summary.png)
 
 ---
 
@@ -57,6 +57,7 @@ StockPy/
 └── screenshots/
     ├── dashboard_overview.png
     ├── dashboard_volume_summary.png
+
 
 
 
