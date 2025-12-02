@@ -51,11 +51,11 @@ StockPy/
 │
 ├── stock.py               # Streamlit main app
 ├── README.md              # Documentation
-├── requirements.txt       # Dependencies
 │
 └── screenshots/
     ├── dashboard_overview.png
     ├── dashboard_volume_summary.png
+
 
 
 
