@@ -5,7 +5,7 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 ---
 
-## 🖼️ Demo / Screenshots
+## Data visualization
 
 
 ![Dashboard Overview](screenshots/dashboard_overview.png)
@@ -147,6 +147,7 @@ StockPy/
 └── screenshots/
     ├── dashboard_overview.png
     ├── dashboard_volume_summary.png
+
 
 
 
