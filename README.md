@@ -132,8 +132,9 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 ## 📜 License
 
-##### This project is released under the MIT License.
-##### You are free to use, modify, and distribute this project.
+This project is released under the MIT License.
+
+You are free to use, modify, and distribute this project.
 
 
 ## 📂 Project Structure
@@ -147,6 +148,7 @@ StockPy/
 └── screenshots/
     ├── dashboard_overview.png
     ├── dashboard_volume_summary.png
+
 
 
 
