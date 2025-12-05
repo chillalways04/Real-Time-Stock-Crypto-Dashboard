@@ -1,4 +1,4 @@
-# 📈 Real-Time Stock & Crypto Dashboard
+# Real-Time Stock & Crypto Dashboard
 
 Dashboard แบบโต้ตอบสำหรับดูราคาหุ้นและคริปโตแบบ **Real-Time Simulation**  
 สร้างด้วย **Python + Streamlit + yfinance + Plotly** พร้อม UI สวยงามใช้งานง่าย
@@ -13,26 +13,26 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🔍 รองรับทั้ง Stocks และ Crypto
+### รองรับทั้ง Stocks และ Crypto
 - เลือก Symbol หลายตัวพร้อมกัน เช่น `AAPL`, `NVDA`, `META`, `BTC-USD`
 - ปรับช่วงเวลาได้: **1M, 3M, 6M, 1Y, Custom**
 
-### 📊 Visualization 
-- 📉 **Price Line Chart** (Zoom / Hover / Multi-Symbol)
-- 📊 **Volume Bar Chart**
-- 🔢 **KPI Metrics** (Last Close & % Change)
-- 📋 **Summary Table** (แสดงผลราคาและ Volume ช่วงเวลาที่เลือก)
+### Visualization 
+- **Price Line Chart** (Zoom / Hover / Multi-Symbol)
+- **Volume Bar Chart**
+- **KPI Metrics** (Last Close & % Change)
+- **Summary Table** (แสดงผลราคาและ Volume ช่วงเวลาที่เลือก)
 
-### ⚙️ ฟีเจอร์ด้าน Performance
+### ฟีเจอร์ด้าน Performance
 - ทำงานเร็วด้วย `@st.cache_data(ttl=300)`
 - โหลดข้อมูลจาก Yahoo Finance ทุกครั้งที่ผู้ใช้เปลี่ยนตั้งค่า
 - รองรับ **Log scale** สำหรับราคาที่ต่างกันมาก
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer        | Technology                     |
 |-------------|---------------------------------|
@@ -46,7 +46,7 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 
 
-# ⚙️ Installation & Setup & How it Works
+# Installation & Setup & How it Works
 * Clone repository
  git clone https://github.com/your-username/StockPY.git cd StockPY
 
@@ -65,7 +65,7 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 #### http://localhost:8501
 
 
-## 🧠 How It Works
+## How It Works
   #### 1. ดึงข้อมูลตลาดผ่าน yfinance (OHLCV)
 * Close Price
 * Volume
@@ -89,7 +89,7 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 #### 4. สร้างกราฟแบบ Interactive
 
-📉 Price Chart
+Price Chart
         
 * ulti-symbol
 
@@ -97,13 +97,13 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 * รองรับ Log scale
 
-📊 Volume Chart
+Volume Chart
 
 * Grouped bars per date
 
 * เปรียบเทียบระหว่าง Symbol ได้ดีมาก
 
-## 📋 Summary Table
+## Summary Table
 แสดงข้อมูลสุดท้ายของช่วงเวลาที่เลือก:
 
 * Last Close
@@ -114,7 +114,7 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 
 * Last Date
 
-## 📡 API & Data Source
+## API & Data Source
 
 ใช้ข้อมูลจาก Yahoo Finance ผ่านไลบรารี:
 
@@ -123,21 +123,21 @@ Dashboard แบบโต้ตอบสำหรับดูราคาหุ�
 ดึงข้อมูล OHLCV ทุกครั้งที่ผู้ใช้เปลี่ยน Symbol หรือช่วงเวลา
 
 
-## 📝 Requirements
+## Requirements
     streamlit
     yfinance
     pandas
     numpy
     plotly
 
-## 📜 License
+## License
 
 This project is released under the MIT License.
 
 You are free to use, modify, and distribute this project.
 
 
-## 📂 Project Structure
+## Project Structure
 
 ```txt
 StockPy/
@@ -148,6 +148,7 @@ StockPy/
 └── screenshots/
     ├── dashboard_overview.png
     ├── dashboard_volume_summary.png
+
 
 
 
